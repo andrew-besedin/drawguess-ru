@@ -13,8 +13,13 @@
         align-items: center;
         
         &__logo {
-            height: 317px;
+            height: 250px;
             width: auto;
+            margin-bottom: 27px;
+        }
+
+        &__input {
+            width: 500px;
         }
     }
 }
