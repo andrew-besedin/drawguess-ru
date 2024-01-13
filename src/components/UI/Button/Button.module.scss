@@ -1,0 +1,18 @@
+.button {
+    padding: 12px 16px;
+    background-color: #F6A831;
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button_transparent {
+    padding: 0;
+    background-color: transparent;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
