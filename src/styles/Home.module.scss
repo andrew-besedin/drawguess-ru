@@ -29,6 +29,11 @@
             display: flex;
             gap: 25px;
 
+            .home__button_wrapper {
+                width: 100%;
+                display: flex;
+            }
+            
             .home__button {
                 flex: 1;
                 height: 50px;

@@ -1,7 +1,12 @@
-
+import styles from "@/styles/Game.module.scss";
+import DrawCanvas from "@/components/pages/game/DrawCanvas/DrawCanvas";
 
 export default function Game() {
     return (
-        <p>test</p>
+        <>
+            <main className={styles.game}>
+                <DrawCanvas />
+            </main>
+        </>
     )
 }

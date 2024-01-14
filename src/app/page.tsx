@@ -6,6 +6,7 @@ import Input from "@/components/UI/Input/Input";
 import Button from "@/components/UI/Button/Button";
 import { useState } from "react";
 import BackButton from "@/components/default/BackButton/BackButton";
+import Link from "next/link";
 
 export default function Home() {
     const [nickname, setNickname] = useState("");
@@ -52,11 +53,13 @@ export default function Home() {
                 <div
                     className={styles.home__buttons}
                 >
-                    <Button
-                        className={styles.home__button}
-                    >
-                        Присоединиться
-                    </Button>
+                    <Link href="/game/12" className={styles.home__button_wrapper}>
+                        <Button
+                            className={styles.home__button}
+                        >
+                            Присоединиться
+                        </Button>
+                    </Link>
                 </div>
             </>
         )
@@ -64,7 +67,7 @@ export default function Home() {
 
     return (
         <>
-            <div className={styles.home__wrapper}>
+            <main className={styles.home__wrapper}>
                 <div className={styles.home}>
                     <Image 
                         src={logoImg}
@@ -81,7 +84,7 @@ export default function Home() {
                         </p>
                     }
                 </div>
-            </div>
+            </main>
             {continued && 
                 <BackButton 
                     onClick={() => setContinued(false)}
