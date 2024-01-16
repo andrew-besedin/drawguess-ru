@@ -1,7 +1,6 @@
 "use client"
 import styles from "./DrawCanvas.module.scss";
 import { useEffect, useRef, useState } from "react";
-// import { useWindowHeight, useWindowWidth } from "@react-hook/window-size";
 
 export default function DrawCanvas() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -50,15 +49,17 @@ export default function DrawCanvas() {
     }
 
     return (
-        <canvas 
-            ref={canvasRef} 
-            width={1000}
-            height={500}
-            // className={styles.canvas}
-            onMouseMove={onMouseMove}
-            onMouseDown={onMouseDown}
-            onMouseUp={() => setMouseDown(false)}
-            onMouseLeave={() => setMouseDown(false)}
-        />
+        <div className={styles.canvas__wrapper}>
+            <canvas 
+                ref={canvasRef} 
+                width={2000}
+                height={1000}
+                className={styles.canvas}
+                onMouseMove={onMouseMove}
+                onMouseDown={onMouseDown}
+                onMouseUp={() => setMouseDown(false)}
+                onMouseLeave={() => setMouseDown(false)}
+            />
+        </div>
     );
 }

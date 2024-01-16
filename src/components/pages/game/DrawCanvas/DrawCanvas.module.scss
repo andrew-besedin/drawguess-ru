@@ -1,4 +1,13 @@
+.canvas__wrapper {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
 .canvas {
-    height: 100%;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

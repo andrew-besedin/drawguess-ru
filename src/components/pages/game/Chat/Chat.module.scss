@@ -1,0 +1,42 @@
+.chat {
+    height: 250px;
+    // flex: 1;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+        padding: 8px 5px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+
+        .chat__message {
+            padding: 8px 6px;
+            width: 100%;
+
+            > p, span {
+                font-size: 14px;
+            }
+
+            span {
+                font-weight: 700;
+            }
+
+            &_grey {
+                background-color: var(--color-grey);
+            }
+        }
+    }
+
+    > div {
+        flex: 1;
+    }
+}
