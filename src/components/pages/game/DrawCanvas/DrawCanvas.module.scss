@@ -11,3 +11,32 @@
     top: 0;
     left: 0;
 }
+
+.color-picker {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+
+    > img {
+        height: 50px;
+        width: auto;
+    }
+    
+    > svg {
+        height: 18px;
+        width: 18px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    > input {
+        // display: none;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

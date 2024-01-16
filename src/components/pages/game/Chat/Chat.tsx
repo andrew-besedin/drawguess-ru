@@ -23,7 +23,7 @@ export default function Chat() {
 
     function onKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
         if (!messageText) return;
-        if (event.key === "Enter") {
+        if (event.key === "Enter" && !event.repeat) {
             setMessages(prev => [ 
                 ...prev,  
                 {
