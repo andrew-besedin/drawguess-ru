@@ -24,6 +24,7 @@ export default function Chat() {
     function onKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
         if (!messageText) return;
         if (event.key === "Enter" && !event.repeat) {
+            setMessageText("");
             setMessages(prev => [ 
                 ...prev,  
                 {
@@ -39,7 +40,6 @@ export default function Chat() {
     return (
         <div className={styles.chat}>
             <div className={styles.chat__body}>
-                {/* <ChatMessage item={{ author: "efsdf", text: "ssss" }} isGrey /> */}
                 {
                     messages.map((e, i) => (
                         <ChatMessage key={e.id} item={e} isGrey={i % 2 === 0} />

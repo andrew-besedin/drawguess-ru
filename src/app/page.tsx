@@ -31,11 +31,13 @@ export default function Home() {
                     >
                         Присоединиться
                     </Button>
-                    <Button
-                        className={styles.home__button}
-                    >
-                        Создать игру
-                    </Button>
+                    <Link href="/room_setup/12" className={styles.home__button_wrapper}>
+                        <Button
+                            className={styles.home__button}
+                        >
+                            Создать игру
+                        </Button>
+                    </Link>
                 </div>
             </>
         )
