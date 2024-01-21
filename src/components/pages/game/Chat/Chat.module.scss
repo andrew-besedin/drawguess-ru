@@ -1,22 +1,22 @@
 .chat {
-    height: 500px;
+    height: calc(100vh - 420px);
     // flex: 1;
     background-color: var(--color-white);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-height: 925px) {
-        height: 300px;
-    }
+    // @media screen and (max-height: 925px) {
+    //     height: 300px;
+    // }
 
-    @media screen and (max-height: 800px) {
-        height: 250px;
-    }
+    // @media screen and (max-height: 800px) {
+    //     height: 250px;
+    // }
 
-    @media screen and (max-height: 650px) {
-        height: 200px;
-    }
+    // @media screen and (max-height: 650px) {
+    //     height: 200px;
+    // }
 
     &__input {
         padding: 8px 5px;

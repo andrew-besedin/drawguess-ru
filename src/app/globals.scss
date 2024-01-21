@@ -13,12 +13,14 @@ html {
     --color-white: #FFFFFF;
     --color-light-grey: #EFEFEF;
     --color-grey: #E2E2E2;
+    --border-color: #FFC700;
 }
 
 body {
     height: 100vh;
     min-width: 860px;
     max-width: 2200px;
+    max-height: 2000px;
     margin: 0 auto;
     background-color: var(--bg-color);
 }
